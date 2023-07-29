@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const app = express();
-const port=4020;
+const port=process.env.PORT;
 const db = mysql.createConnection({
     host:process.env.DB_HOST,
     user: process.env.DB_USER,
